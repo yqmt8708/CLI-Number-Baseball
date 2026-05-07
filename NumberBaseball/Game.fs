@@ -28,7 +28,7 @@ let private getUserInput turn : string =
         match isValidInput input with
         | true -> input
         | false ->
-            printfn "Invalid input. Please enter a three-digit number with unique digits (eg. 123)"
+            printfn "Invalid input. Please enter a 3-digit number with unique digits (eg. 123)"
             loop ()
     loop ()
 
