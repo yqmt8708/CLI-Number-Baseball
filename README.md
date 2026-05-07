@@ -2,7 +2,7 @@
 
 A command-line Number Baseball game originally known as Bulls and Cows built with **F# / .NET 10**.
 
-The enemy generates a unique 3-digit number, and the user tries to guess the secret number using strike and ball hints.
+The enemy generates a 3-digit number with unique digits, and you try to guess it using strike and ball hints.
 
 ---
 
@@ -70,8 +70,8 @@ The enemy generates a secret 3-digit number containing unique digits from 0 to 9
 
 | Result | Condition |
 |--------|-----------|
-| **You win** | You get *3 strikes* within the 6 turns |
-| **Enemy wins** | You consume all *6 turns* without getting 3 strikes |
+| **You win** | You get **3 strikes** within the 6 turns |
+| **Enemy wins** | You consume all **6 turns** without getting 3 strikes |
 
 After the game ends, you are asked whether to play again.
 
