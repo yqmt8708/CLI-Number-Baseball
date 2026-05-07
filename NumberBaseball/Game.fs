@@ -72,7 +72,7 @@ let run () : GameResult =
             printfn "3 strikes! You win!"
             PlayerWins
         elif turn >= 6 then // When the user consumes all 6 turns without getting 3 strikes, the enemy wins
-            printfn "Out of turns! You lose... The secret number was %s." secret 
+            printfn "Out of turns! Enemy wins. The secret number was %s." secret 
             EnemyWins
         else 
             loop (turn + 1)
