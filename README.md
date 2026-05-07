@@ -106,7 +106,7 @@ CLI-Number-Baseball/
 ├── README.md
 ├── requirements.md
 └── NumberBaseball/
-    ├── Game.fs            # Game loop, player input validation, evaluate player input
+    ├── Game.fs            # Game loop, secret number generation, player input validation, player input evaluation
     └── Program.fs         # Entry point, play-again loop
 ```
 
@@ -121,7 +121,7 @@ type GameResult = PlayerWins | EnemyWins
 
 | Module | Responsibility |
 |--------|---------------|
-| `Game`  | Main game loop, input validation, evaluate player input, end-state display |
+| `Game`  | Main game loop, secret number generation, input validation, player input evaluation, end-state display |
 | `Program` | Entry point; prints generating secret number message, drives play-again loop |
 
 ---
