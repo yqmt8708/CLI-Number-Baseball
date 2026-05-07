@@ -133,3 +133,14 @@ type GameResult = PlayerWins | EnemyWins
 - Selecting an invalid input re-prompts — the turn does **not** advance.
 - A **strike** means right digit, *right place*. A **ball** means right digit, *wrong place*.
 - 3 strikes win the game. Consuming 6 turns loses the game.
+
+## LLM Usage
+
+**What I used the LLM for:**
+I used the LLM to help generate the initial F# project structure and the logic for generating a random 3-digit number.
+
+**What I had to manually change or reprompt:**
+When I asked for the logic to generate a random 3-digit number, the LLM didn't consider that the secret number should contain unique digits. Once I realized this, I had to manually change it.
+
+**The main point that the LLM was not able to do correctly:**
+While it is true that I did not explicitly specify "no duplicate digits" in my prompt, I had clearly mentioned that the function was for a "Number Baseball" game. I expected the LLM to infer the standard rules of this game and automatically generate a 3-digit number with unique digits. However, the LLM failed to apply this contextual knowledge to the code generation, simply returning a generic random 3-digit number generator instead.
