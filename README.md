@@ -49,7 +49,7 @@ dotnet publish -c Release -r linux-x64 --self-contained
 
 ### Generating Secret Number
 
-The enemy generates a secret 3-digit number containing unique digits from 0 to 9.
+The enemy generates a secret 3-digit number containing unique digits from `0` to `9`.
 
 ### Taking a Turn
 
